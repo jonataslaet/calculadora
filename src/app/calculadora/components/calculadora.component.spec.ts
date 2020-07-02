@@ -1,6 +1,8 @@
+import { CalculadoraService } from './../services/calculadora.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalculadoraComponent } from './calculadora.component';
+
 
 describe('CalculadoraComponent', () => {
   let component: CalculadoraComponent;
@@ -8,7 +10,8 @@ describe('CalculadoraComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CalculadoraComponent ]
+      declarations: [ CalculadoraComponent ],
+      providers: [CalculadoraService]
     })
     .compileComponents();
   }));
